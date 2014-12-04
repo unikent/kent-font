@@ -1,0 +1,27 @@
+@font-face {
+    font-family:"<%= fontBaseName %>";<% if (fontSrc1) { %>
+    src:<%= fontSrc1 %>;<% }%>
+    src:<%= fontSrc2 %>;
+    font-weight:normal;
+    font-style:normal;
+}
+<% if (baseStyles) { %>.<%= baseClass %> {
+    font-family:"<%= fontBaseName %>";
+    display:inline-block;
+    vertical-align:middle;
+    line-height:1;
+    font-weight:normal;
+    font-style:normal;
+    text-decoration:inherit;
+    text-transform:none;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+<% } %>
+
+<% if (iconsStyles) { %>/* Icons */<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+
+.<%= classPrefix %><%= glyphs[glyphIdx] %>:before {
+    content:"<% if (addLigatures) { %><%= glyphs[glyphIdx] %><% } else { %>\<%= codepoints[glyphIdx] %><% } %>";
+}<%  } } %>
