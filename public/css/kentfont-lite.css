@@ -5,8 +5,8 @@
   font-weight: normal;
   font-style: normal;
 }
-.kf {
-  font-family: "kentfont-lite";
+[class^="kf-"]:before,
+[class*=" kf-"]:before {
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
@@ -17,6 +17,29 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.kf-book:before,
+.kf-chevron-down:before,
+.kf-chevron-left:before,
+.kf-chevron-right:before,
+.kf-chevron-up:before,
+.kf-email:before,
+.kf-kent-block:before,
+.kf-kent-horizontal:before,
+.kf-kent-ke:before,
+.kf-library-search:before,
+.kf-moodle:before,
+.kf-sds:before,
+.kf-search:before,
+.kf-spinner-alt:before,
+.kf-spinner:before,
+.kf-timetables:before,
+.kf-twitter:before {
+  font-family: "kentfont-lite";
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
 }
 .kf-book:before {
   content: "\f02d";
