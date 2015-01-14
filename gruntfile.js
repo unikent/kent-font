@@ -45,6 +45,7 @@ module.exports = function(grunt) {
 				options: {
 					engine:'node',
 					font: 'kentfont',
+					syntax: 'bootstrap',
 					hashes: false,
                     template: 'build/templates/fontface.css',
 					templateOptions: {
@@ -63,6 +64,7 @@ module.exports = function(grunt) {
 				options: {
 					engine:'node',
 					font: 'kentfont-lite',
+					syntax: 'bootstrap',
 					hashes: false,
                     template: 'build/templates/fontface.css',
 					templateOptions: {
