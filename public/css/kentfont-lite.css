@@ -23,6 +23,7 @@
 .kf-chevron-left:before,
 .kf-chevron-right:before,
 .kf-chevron-up:before,
+.kf-circle:before,
 .kf-email:before,
 .kf-kent-block:before,
 .kf-kent-horizontal:before,
@@ -33,6 +34,7 @@
 .kf-search:before,
 .kf-spinner-alt:before,
 .kf-spinner:before,
+.kf-square:before,
 .kf-timetables:before,
 .kf-twitter:before {
   font-family: "kentfont-lite";
@@ -55,6 +57,9 @@
 }
 .kf-chevron-up:before {
   content: "\f077";
+}
+.kf-circle:before {
+  content: "\f111";
 }
 .kf-email:before {
   content: "\f0e0";
@@ -85,6 +90,9 @@
 }
 .kf-spinner:before {
   content: "\f110";
+}
+.kf-square:before {
+  content: "\f04d";
 }
 .kf-timetables:before {
   content: "\f073";

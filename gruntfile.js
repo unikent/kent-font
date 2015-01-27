@@ -32,7 +32,15 @@ module.exports = function(grunt) {
 						'plus': 0xF067,
 						'minus': 0xF068,
 						'home': 0xF015,
-						'spinner-alt': 0xF1CE
+						'spinner-alt': 0xF1CE,
+						'square': 0xF04D,
+						'circle': 0xF111,
+						'caret-left': 0xF0D9,
+						'caret-right': 0xF0DA,
+						'caret-up':	0xF0D8,
+						'caret-down': 0xF0D7,
+						'sort-asc': 0xF0DE,
+						'sort-desc': 0xF0DD
 					};
 					
 	grunt.initConfig({
