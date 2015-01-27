@@ -1,0 +1,24 @@
+{
+  "name": "kent-font",
+  "version": "0.0.1",
+  "description": "Icon webfont for use in kent sites and applications.",
+  "main": "n/a",
+  "dependencies": {
+    "grunt": "*"
+  },
+  "devDependencies": {
+    "grunt-webfont": "*",
+	"grunt-contrib-less": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-image-embed": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unikent/kent-font.git"
+  },
+  "author": "",
+  "license": "N/A",
+  "bugs": {
+    "url": "https://github.com/unikent/kent-font/issues"
+  }
+}

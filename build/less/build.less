@@ -1,0 +1,90 @@
+@kf-li-width:         (30em / 14);
+
+
+//fixed width
+//==================================================
+
+.kf-fw {
+  width: (18em / 14);
+  text-align: center;
+}
+
+//spinning
+//==================================================
+
+.kf-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+@-webkit-keyframes kf-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes kf-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+
+
+//rotate & flip
+//==================================================
+
+.kf-rotate-90  { .fa-icon-rotate(90deg, 1);  }
+.kf-rotate-180 { .fa-icon-rotate(180deg, 2); }
+.kf-rotate-270 { .fa-icon-rotate(270deg, 3); }
+
+.kf-flip-horizontal { .fa-icon-flip(-1, 1, 0); }
+.kf-flip-vertical   { .fa-icon-flip(1, -1, 2); }
+
+
+//mixins
+//==================================================
+
+.fa-icon-rotate(@degrees, @rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation);
+  -webkit-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees);
+          transform: rotate(@degrees);
+}
+
+.fa-icon-flip(@horiz, @vert, @rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation, mirror=1);
+  -webkit-transform: scale(@horiz, @vert);
+      -ms-transform: scale(@horiz, @vert);
+          transform: scale(@horiz, @vert);
+}
+
+//lists
+//==================================================
+
+.kf-ul {
+  padding-left: 0;
+  margin-left: @kf-li-width;
+  list-style-type: none;
+  > li { position: relative; }
+}
+.kf-li {
+  position: absolute;
+  left: -@kf-li-width;
+  width: @kf-li-width;
+  top: (2em / 14);
+  text-align: center;
+  &.kf-lg {
+    left: (-@kf-li-width + (4em / 14));
+  }
+}
