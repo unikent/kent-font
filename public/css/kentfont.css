@@ -18,6 +18,55 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.kf-book,
+.kf-chevron-down,
+.kf-chevron-left,
+.kf-chevron-right,
+.kf-chevron-up,
+.kf-circle,
+.kf-email,
+.kf-kent-block,
+.kf-kent-horizontal,
+.kf-kent-ke,
+.kf-library-search,
+.kf-moodle,
+.kf-sds,
+.kf-search,
+.kf-spinner,
+.kf-square,
+.kf-timetables,
+.kf-twitter,
+.kf-angle-down,
+.kf-angle-left,
+.kf-angle-right,
+.kf-angle-up,
+.kf-caret-down,
+.kf-caret-left,
+.kf-caret-right,
+.kf-caret-up,
+.kf-exclamation-circle,
+.kf-external-link,
+.kf-home,
+.kf-info-circle,
+.kf-minus,
+.kf-plus,
+.kf-sort-asc,
+.kf-sort-desc {
+  display: inline-block;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-size: inherit;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-synthesis: weight style;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-rendering: auto;
+  transform: translate(0px, 0px);
+}
 .kf-book:before,
 .kf-chevron-down:before,
 .kf-chevron-left:before,
@@ -32,7 +81,6 @@
 .kf-moodle:before,
 .kf-sds:before,
 .kf-search:before,
-.kf-spinner-alt:before,
 .kf-spinner:before,
 .kf-square:before,
 .kf-timetables:before,
@@ -101,11 +149,8 @@
 .kf-search:before {
   content: "\f002";
 }
-.kf-spinner-alt:before {
-  content: "\f1ce";
-}
 .kf-spinner:before {
-  content: "\f110";
+  content: "\f1ce";
 }
 .kf-square:before {
   content: "\f04d";
@@ -168,9 +213,72 @@
   width: 1.28571429em;
   text-align: center;
 }
+/* makes the font 33% larger relative to the icon container */
+.kf-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.kf-2x {
+  font-size: 2em;
+}
+.kf-3x {
+  font-size: 3em;
+}
+.kf-4x {
+  font-size: 4em;
+}
+.kf-5x {
+  font-size: 5em;
+}
+.kf-border {
+  padding: .2em .25em .15em;
+  border: solid .08em #eee;
+  border-radius: .1em;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.kf.pull-left {
+  margin-right: .3em;
+}
+.kf.pull-right {
+  margin-left: .3em;
+}
+.kf-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.kf-stack-1x,
+.kf-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.kf-stack-1x {
+  line-height: inherit;
+}
+.kf-stack-2x {
+  font-size: 2em;
+}
+.kf-inverse {
+  color: #fff;
+}
 .kf-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-  animation: fa-spin 2s infinite linear;
+  -webkit-animation: kf-spin 2s infinite linear;
+  animation: kf-spin 2s infinite linear;
+}
+.kf-pulse {
+  -webkit-animation: kf-spin 1s infinite steps(8);
+  animation: kf-spin 1s infinite steps(8);
 }
 @-webkit-keyframes kf-spin {
   0% {

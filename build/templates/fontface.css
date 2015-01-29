@@ -33,6 +33,20 @@ font-style:normal;
 /* Mixins */
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
 .<%= classPrefix %><%= glyphs[glyphIdx] %><% if(glyphIdx === glyphs.length-1) { %> { <% } else { %>, <% } } %>
+display:inline-block;
+font-feature-settings: normal;
+font-kerning: auto;
+font-language-override: normal;
+font-size: inherit;
+font-size-adjust: none;
+font-stretch: normal;
+font-style: normal;
+font-synthesis: weight style;
+font-variant: normal;
+font-weight: normal;
+line-height: 1;
+text-rendering: auto;
+transform: translate(0px, 0px);
 &:before {
      font-family:"<%= fontBaseName %>";
      display:inline-block;

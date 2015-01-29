@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title><%= fontBaseName %></title>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" media="all" href="css/<%= fontBaseName %>.css">
+		<script src="//code.jquery.com/jquery-git1.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<style>
+
+			.hll {
+				background-color: #ffffcc;
+			}
+			.c {
+				color: #999;
+			}
+			.err {
+				background-color: #ffaaaa;
+				color: #aa0000;
+			}
+			.k {
+				color: #006699;
+			}
+			.o {
+				color: #555555;
+			}
+			.cm {
+				color: #0099ff;
+				font-style: italic;
+			}
+			.cp {
+				color: #009999;
+			}
+			.c1 {
+				color: #999;
+			}
+			.cs {
+				color: #999;
+			}
+			.gd {
+				background-color: #ffcccc;
+				border: 1px solid #cc0000;
+			}
+			.ge {
+				font-style: italic;
+			}
+			.gr {
+				color: #ff0000;
+			}
+			.gh {
+				color: #003300;
+			}
+			.gi {
+				background-color: #ccffcc;
+				border: 1px solid #00cc00;
+			}
+			.go {
+				color: #aaaaaa;
+			}
+			.gp {
+				color: #000099;
+			}
+			.gs {
+			}
+			.gu {
+				color: #003300;
+			}
+			.gt {
+				color: #99cc66;
+			}
+			.kc {
+				color: #006699;
+			}
+			.kd {
+				color: #006699;
+			}
+			.kn {
+				color: #006699;
+			}
+			.kp {
+				color: #006699;
+			}
+			.kr {
+				color: #006699;
+			}
+			.kt {
+				color: #007788;
+			}
+			.m {
+				color: #ff6600;
+			}
+			.s {
+				color: #d44950;
+			}
+			.na {
+				color: #4f9fcf;
+			}
+			.nb {
+				color: #336666;
+			}
+			.nc {
+				color: #00aa88;
+			}
+			.no {
+				color: #336600;
+			}
+			.nd {
+				color: #9999ff;
+			}
+			.ni {
+				color: #999999;
+			}
+			.ne {
+				color: #cc0000;
+			}
+			.nf {
+				color: #cc00ff;
+			}
+			.nl {
+				color: #9999ff;
+			}
+			.nn {
+				color: #00ccff;
+			}
+			.nt {
+				color: #2f6f9f;
+			}
+			.nv {
+				color: #003333;
+			}
+			.ow {
+				color: #000000;
+			}
+			.w {
+				color: #bbbbbb;
+			}
+			.mf {
+				color: #ff6600;
+			}
+			.mh {
+				color: #ff6600;
+			}
+			.mi {
+				color: #ff6600;
+			}
+			.mo {
+				color: #ff6600;
+			}
+			.sb {
+				color: #cc3300;
+			}
+			.sc {
+				color: #cc3300;
+			}
+			.sd {
+				color: #cc3300;
+				font-style: italic;
+			}
+			.s2 {
+				color: #cc3300;
+			}
+			.se {
+				color: #cc3300;
+			}
+			.sh {
+				color: #cc3300;
+			}
+			.si {
+				color: #aa0000;
+			}
+			.sx {
+				color: #cc3300;
+			}
+			.sr {
+				color: #33aaaa;
+			}
+			.s1 {
+				color: #cc3300;
+			}
+			.ss {
+				color: #ffcc33;
+			}
+			.bp {
+				color: #336666;
+			}
+			.vc {
+				color: #003333;
+			}
+			.vg {
+				color: #003333;
+			}
+			.vi {
+				color: #003333;
+			}
+			.il {
+				color: #ff6600;
+			}
+			.css .o, .css .o + .nt, .css .nt + .nt {
+				color: #999;
+			}
+			pre {
+				background-color: #fafafa;
+				padding: 8px 15px;
+			}
+			
+			.icons_item{
+				box-sizing: border-box;
+				font-size: 5em;
+				text-align: center;
+				border: 1px solid #fff;
+			}
+			.icons_item:hover{
+				background-color: #f4f4f4;
+				border-radius: 10px;
+				border:1px solid #888;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		<h1><%= fontBaseName %></h1>
+
+		<div class="icons row" id="icons">
+			<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx]
+				if(glyph==='kent-horizontal'){
+			%>
+			<div class="icons_item col-xs-12 col-sm-6" data-name="<%= glyph %>"><i class="<%= classPrefix %><%= glyph %>"></i></div>
+			<%
+			}else{
+			if(glyph==='kent-block'){
+			%>
+			<div class="icons_item col-xs-6 col-sm-2" data-name="<%= glyph %>"><i class="<%= classPrefix %><%= glyph %>"></i></div>
+			<%
+			}else{
+
+			%>
+				<div class="icons_item col-xs-4 col-sm-2" data-name="<%= glyph %>"><i class="kf-fw <%= classPrefix %><%= glyph %>"></i></div>
+			<% }}} %>
+		</div>
+
+		<h1 id="usage">Usage</h1>
+			<div class="highlight"><pre><code class="html"><span class="nt">&lt;i </span><span class="na">class=</span><span class="s">&quot;<%= classPrefix %><span id="name">name</span>&quot;</span><span class="nt">&gt;&lt;/i&gt;</span></code></pre></div>
+				<section id="basic">
+					<h2 class="page-header">
+						Basic Icons
+					</h2>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<p>
+								<i class="kf-kent-ke"></i> kf-kent-ke
+							</p>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<p>
+								You can place KentFont icons just about anywhere using the icon's
+								name. KentFont is designed to be used with inline elements (we like the <code>&lt;i&gt;</code> tag for
+								brevity, but using a <code>&lt;span&gt;</code> is more semantically correct).
+							</p>
+							<div class="highlight"><pre><code class="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-kent-ke
+							</code></pre></div>
+							<div class="alert alert-success">
+								<ul class="kf-ul">
+									<li>
+										<i class="kf-info-circle kf-lg kf-li"></i>
+										If you change the font-size of the icon's container, the icon gets bigger. Same things goes for color,
+										drop shadow, and anything else that gets inherited using CSS.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="larger">
+					<h2 class="page-header">
+						Larger Icons
+					</h2>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<p><i class="kf-kent-ke kf-lg"></i> kf-lg</p>
+							<p><i class="kf-kent-ke kf-2x"></i> kf-2x</p>
+							<p><i class="kf-kent-ke kf-3x"></i> kf-3x</p>
+							<p><i class="kf-kent-ke kf-4x"></i> kf-4x</p>
+							<p><i class="kf-kent-ke kf-5x"></i> kf-5x</p>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<p>
+								To increase icon sizes relative to their container, use the <code>kf-lg</code> (33% increase), <code>kf-2x</code>,
+								<code>kf-3x</code>, <code>kf-4x</code>, or <code>kf-5x</code> classes.
+							</p>
+							<div class="highlight"><pre><code class="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-lg"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-lg
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-2x"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-2x
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-3x"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-3x
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-4x"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-4x
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-5x"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-5x
+							</code></pre></div>
+							<div class="alert alert-success">
+								<ul class="kf-ul">
+									<li>
+										<i class="kf-exclamation-triangle kf-li kf-lg"></i>
+										If your icons are getting chopped off on top and bottom, make sure you have
+										sufficient line-height.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="fixed-width">
+					<h2 class="page-header">
+						Fixed Width Icons
+					</h2>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<div class="list-group">
+								<a href="#" class="list-group-item"><i class="kf-sds kf-fw"></i>&nbsp; SDS</a>
+								<a href="#" class="list-group-item"><i class="kf-book kf-fw"></i>&nbsp; Cataloge</a>
+								<a href="#" class="list-group-item"><i class="kf-email kf-fw"></i>&nbsp; Email</a>
+								<a href="#" class="list-group-item"><i class="kf-library-search kf-fw"></i>&nbsp; Library Search</a>
+							</div>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<p>
+								Use <code>kf-fw</code> to set icons at a fixed width. Great to use when different icon widths throw off alignment.
+								Especially useful in things like nav lists &amp; list groups.
+							</p>
+							<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"kf-sds kf-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> SDS<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"kf-book kf-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Cataloge<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"kf-email kf-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Email<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"kf-library-search kf-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span> Library Search<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+							</code></pre></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="list">
+					<h2 class="page-header">
+						List Icons
+					</h2>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<ul class="kf-ul">
+								<li><i class="kf-li kf-square"></i>List icons</li>
+								<li><i class="kf-li kf-circle"></i>can be used</li>
+								<li><i class="kf-li kf-spinner kf-spin"></i>as bullets</li>
+								<li><i class="kf-li kf-kent-ke"></i>in lists</li>
+							</ul>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<p>Use <code>kf-ul</code> and <code>kf-li</code> to easily replace default bullets in unordered lists.</p>
+							<div class="highlight"><pre><code class="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"kf-ul"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"kf-li kf-square"</span><span class="nt">&gt;&lt;/i&gt;</span>List icons<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"kf-li kf-circle"</span><span class="nt">&gt;&lt;/i&gt;</span>can be used<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"kf-li kf-spinner kf-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>as bullets<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"kf-li kf-kent-ke"</span><span class="nt">&gt;&lt;/i&gt;</span>in lists<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+							</code></pre></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="bordered-pulled">
+					<h2 class="page-header">
+						Bordered &amp; Pulled Icons
+					</h2>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<p>
+								<i class="kf-kent-ke kf-3x pull-left kf-border"></i>…tomorrow we will run faster, stretch out our arms farther… And then one fine morning&mdash;
+So we beat on, boats against the current, borne back ceaselessly into the past.
+							</p>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<p>
+								Use <code>kf-border</code> and <code>pull-right</code> or <code>pull-left</code> for easy pull quotes or
+								article icons.
+							</p>
+							<div class="highlight"><pre><code class="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-3x pull-left kf-border"</span><span class="nt">&gt;&lt;/i&gt;</span>
+...tomorrow we will run faster, stretch out our arms farther...
+And then one fine morning&mdash; So we beat on, boats against the
+current, borne back ceaselessly into the past.
+							</code></pre></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="animated">
+					<h2 class="page-header">
+						Animated Icons
+					</h2>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<p>
+								<i class="kf-spinner kf-spin kf-3x kf-fw margin-bottom"></i>
+								<i class="kf-spinner-alt kf-spin kf-3x kf-fw margin-bottom"></i>
+								<i class="kf-spinner kf-pulse kf-3x kf-fw margin-bottom"></i>
+								<i class="kf-spinner-alt kf-pulse kf-3x kf-fw margin-bottom"></i>
+							</p>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<p>
+								Use the <code>kf-spin</code> class to get any icon to rotate, and use <code>kf-pulse</code> to have it rotate
+								with 8 steps. Works well with <code>kf-spinner</code> and <code>kf-spinner-alt</code>.
+							</p>
+							<div class="highlight"><pre><code class="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-spinner kf-spin"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-spinner kf-pulse"</span><span class="nt">&gt;&lt;/i&gt;</span>
+								</code></pre></div>
+							<p class="alert alert-success">
+								<i class="kf-info-circle"></i> CSS3 animations aren't supported in IE8 - IE9.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="rotated-flipped">
+					<h2 class="page-header">
+						Rotated &amp; Flipped
+					</h2>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<p style="font-size: 18px;">
+								<i class="kf-kent-ke"></i>&nbsp; normal<br>
+								<i class="kf-kent-ke kf-rotate-90"></i>&nbsp; kf-rotate-90<br>
+								<i class="kf-kent-ke kf-rotate-180"></i>&nbsp; kf-rotate-180<br>
+								<i class="kf-kent-ke kf-rotate-270"></i>&nbsp; kf-rotate-270<br>
+								<i class="kf-kent-ke kf-flip-horizontal"></i>&nbsp; kf-flip-horizontal<br>
+								<i class="kf-kent-ke kf-flip-vertical"></i>&nbsp; kf-flip-vertical
+							</p>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<p>
+								To arbitrarily rotate and flip icons, use the <code>kf-rotate-*</code> and <code>kf-flip-*</code> classes.
+							</p>
+							<div class="highlight"><pre><code class="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke"</span><span class="nt">&gt;&lt;/i&gt;</span> normal<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-rotate-90"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-rotate-90<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-rotate-180"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-rotate-180<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-rotate-270"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-rotate-270<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-flip-horizontal"</span><span class="nt">&gt;&lt;/i&gt;</span> kf-flip-horizontal<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-flip-vertical"</span><span class="nt">&gt;&lt;/i&gt;</span> icon-flip-vertical
+							</code></pre></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="stacked">
+					<h2 class="page-header">
+						Stacked Icons
+					</h2>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<div class="margin-bottom">
+<span class="kf-stack kf-lg">
+  <i class="kf-square kf-stack-2x"></i>
+  <i class="kf-twitter kf-stack-1x kf-inverse"></i>
+</span>kf-twitter on kf-square<br>
+<span class="kf-stack kf-lg">
+  <i class="kf-circle kf-stack-2x"></i>
+  <i class="kf-kent-ke kf-stack-1x kf-inverse"></i>
+</span>kf-kent-ke on kf-circle<br>
+</div>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<p>
+								To stack multiple icons, use the <code>kf-stack</code> class on the parent, the <code>kf-stack-1x</code>
+								for the regularly sized icon, and <code>kf-stack-2x</code> for the larger icon. <code>kf-inverse</code>
+								can be used as an alternative icon color. You can even throw <a href="#larger">larger icon</a> classes on the parent
+								to get further control of sizing.
+							</p>
+							<div class="highlight"><pre><code class="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"kf-stack kf-lg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-square kf-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-twitter kf-stack-1x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+kf-twitter on kf-square<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"kf-stack kf-lg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-circle kf-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"kf-kent-ke kf-stack-1x kf-inverse"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+kf-kent-ke on kf-circle<span class="nt">&lt;br&gt;</span>
+							</code></pre></div>
+						</div>
+					</div>
+				</section>
+		</div>
+		<script>
+			(function() {
+				$('.icons_item').click(function(e) {
+					e.preventDefault();
+					var name = $(this).data('name');
+					if(typeof name !=='undefined') {
+						$name = $('#name');
+						$name.html(name);
+						$('html, body').animate({
+							scrollTop:$('#usage').offset().top
+						}, 1500);
+					}
+				});
+			})();
+		</script>
+	</body>
+</html>

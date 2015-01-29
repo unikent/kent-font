@@ -9,12 +9,68 @@
   text-align: center;
 }
 
+// Icon Sizes
+// -------------------------
+/* makes the font 33% larger relative to the icon container */
+.kf-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+.kf-2x { font-size: 2em; }
+.kf-3x { font-size: 3em; }
+.kf-4x { font-size: 4em; }
+.kf-5x { font-size: 5em; }
+
+
+// Bordered & Pulled
+// -------------------------
+.kf-border {
+  padding: .2em .25em .15em;
+  border: solid .08em #eee;
+  border-radius: .1em;
+}
+
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+.kf {
+  &.pull-left { margin-right: .3em; }
+  &.pull-right { margin-left: .3em; }
+}
+
+
+// Stacked Icons
+// -------------------------
+.kf-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.kf-stack-1x, .kf-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.kf-stack-1x { line-height: inherit; }
+.kf-stack-2x { font-size: 2em; }
+.kf-inverse { color: #fff; }
+
 //spinning
 //==================================================
 
 .kf-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear;
+  -webkit-animation: kf-spin 2s infinite linear;
+          animation: kf-spin 2s infinite linear;
+}
+
+.kf-pulse {
+  -webkit-animation: kf-spin 1s infinite steps(8);
+  animation: kf-spin 1s infinite steps(8);
 }
 
 @-webkit-keyframes kf-spin {
@@ -44,25 +100,25 @@
 //rotate & flip
 //==================================================
 
-.kf-rotate-90  { .fa-icon-rotate(90deg, 1);  }
-.kf-rotate-180 { .fa-icon-rotate(180deg, 2); }
-.kf-rotate-270 { .fa-icon-rotate(270deg, 3); }
+.kf-rotate-90  { .kf-icon-rotate(90deg, 1);  }
+.kf-rotate-180 { .kf-icon-rotate(180deg, 2); }
+.kf-rotate-270 { .kf-icon-rotate(270deg, 3); }
 
-.kf-flip-horizontal { .fa-icon-flip(-1, 1, 0); }
-.kf-flip-vertical   { .fa-icon-flip(1, -1, 2); }
+.kf-flip-horizontal { .kf-icon-flip(-1, 1, 0); }
+.kf-flip-vertical   { .kf-icon-flip(1, -1, 2); }
 
 
 //mixins
 //==================================================
 
-.fa-icon-rotate(@degrees, @rotation) {
+.kf-icon-rotate(@degrees, @rotation) {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation);
   -webkit-transform: rotate(@degrees);
       -ms-transform: rotate(@degrees);
           transform: rotate(@degrees);
 }
 
-.fa-icon-flip(@horiz, @vert, @rotation) {
+.kf-icon-flip(@horiz, @vert, @rotation) {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation, mirror=1);
   -webkit-transform: scale(@horiz, @vert);
       -ms-transform: scale(@horiz, @vert);
