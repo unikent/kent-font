@@ -13,7 +13,7 @@ Then simply include the css for the version you want in your webpage. *see below
 
 To display an icon add the approriate `.kf-{icon name}` class to a `<span>` or `<i>` tag.
   
-For a list of available icons and further examples including varius utility classes please see the demo pages.
+For a list of available icons and further examples including various utility classes please see the demo pages in the `public` directory.
 
 ## Versions
 
