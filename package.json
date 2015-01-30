@@ -7,7 +7,7 @@
     "grunt": "*"
   },
   "devDependencies": {
-    "grunt-webfont": "*",
+    "grunt-webfont": "~0.5.1",
 	"grunt-contrib-less": "*",
     "grunt-contrib-copy": "*",
     "grunt-image-embed": "*"

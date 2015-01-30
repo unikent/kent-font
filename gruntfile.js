@@ -48,12 +48,13 @@ module.exports = function(grunt) {
 		webfont: {
 			build: {
 				src: 'build/svg/*/*.svg',
-				dest: 'build/fonts',
+				dest: 'public/fonts',
+				destCss: 'build/less',
 				options: {
 					engine:'node',
 					font: 'kentfont',
-					syntax: 'bootstrap',
 					hashes: false,
+					types: 'eot,woff,ttf,svg',
                     template: 'build/templates/fontface.css',
 					htmlDemoTemplate: 'build/templates/demo.html',
 					destHtml: 'public/',
@@ -69,12 +70,13 @@ module.exports = function(grunt) {
 			},
 			lite: {
 				src: 'build/svg/core/*.svg',
-				dest: 'build/fonts',
+				dest: 'public/fonts',
+				destCss: 'build/less',
 				options: {
 					engine:'node',
 					font: 'kentfont-lite',
-					syntax: 'bootstrap',
 					hashes: false,
+					types: 'eot,woff,ttf,svg',
                     template: 'build/templates/fontface.css',
 					htmlDemoTemplate: 'build/templates/demo.html',
 					destHtml: 'public/',
@@ -89,18 +91,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		copy: {
-			build: {
-				src: 'build/fonts/kentfont.less', dest: 'build/less/kentfont.less'
-			},
-			lite: {
-				src: 'build/fonts/kentfont-lite.less', dest: 'build/less/kentfont-lite.less'
-			},
-			font: {
-				expand: true, cwd: 'build/fonts/', src: ['*','!*.less','!*.html'], dest: 'public/fonts/', filter: 'isFile'
-			}
-		},
-		
 		less : {
             build : {
                 files : { "public/css/kentfont.css" : "build/less/master.less" }
@@ -122,10 +112,9 @@ module.exports = function(grunt) {
         }
 	});
 
-
 	// Default task(s).
-	grunt.registerTask('default', ['webfont', 'copy','less','imageEmbed']);
-	grunt.registerTask('lite', ['webfont:lite', 'copy:lite', 'copy:font', 'less:lite','imageEmbed']);
-	grunt.registerTask('build', ['webfont:build', 'copy:build', 'copy:font', 'less:build']);
+	grunt.registerTask('default', ['webfont','less','imageEmbed']);
+	grunt.registerTask('lite', ['webfont:lite', 'less:lite','imageEmbed']);
+	grunt.registerTask('build', ['webfont:build', 'less:build']);
 };
 
