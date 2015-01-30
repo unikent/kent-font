@@ -7,10 +7,10 @@
     "grunt": "*"
   },
   "devDependencies": {
-    "grunt-webfont": "~0.5.1",
-	"grunt-contrib-less": "*",
+    "grunt-webfont": "0.4.8",
+    "grunt-contrib-less": "*",
     "grunt-contrib-copy": "*",
-    "grunt-image-embed": "*"
+    "grunt-image-embed": "0.3.3"
   },
   "repository": {
     "type": "git",
