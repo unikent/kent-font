@@ -44,11 +44,16 @@
 .kf-caret-left,
 .kf-caret-right,
 .kf-caret-up,
+.kf-check,
+.kf-close,
 .kf-exclamation-circle,
 .kf-external-link,
 .kf-home,
 .kf-info-circle,
+.kf-menu,
 .kf-minus,
+.kf-pause,
+.kf-play,
 .kf-plus,
 .kf-sort-asc,
 .kf-sort-desc {
@@ -93,11 +98,16 @@
 .kf-caret-left:before,
 .kf-caret-right:before,
 .kf-caret-up:before,
+.kf-check:before,
+.kf-close:before,
 .kf-exclamation-circle:before,
 .kf-external-link:before,
 .kf-home:before,
 .kf-info-circle:before,
+.kf-menu:before,
 .kf-minus:before,
+.kf-pause:before,
+.kf-play:before,
 .kf-plus:before,
 .kf-sort-asc:before,
 .kf-sort-desc:before {
@@ -185,6 +195,12 @@
 .kf-caret-up:before {
   content: "\f0d8";
 }
+.kf-check:before {
+  content: "\f00c";
+}
+.kf-close:before {
+  content: "\f00d";
+}
 .kf-exclamation-circle:before {
   content: "\f06a";
 }
@@ -197,8 +213,17 @@
 .kf-info-circle:before {
   content: "\f05a";
 }
+.kf-menu:before {
+  content: "\f0c9";
+}
 .kf-minus:before {
   content: "\f068";
+}
+.kf-pause:before {
+  content: "\f04c";
+}
+.kf-play:before {
+  content: "\f04b";
 }
 .kf-plus:before {
   content: "\f067";

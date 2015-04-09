@@ -39,7 +39,12 @@ module.exports = function(grunt) {
 						'caret-up':	0xF0D8,
 						'caret-down': 0xF0D7,
 						'sort-asc': 0xF0DE,
-						'sort-desc': 0xF0DD
+						'sort-desc': 0xF0DD,
+                        'play': 0xF04B,
+                        'pause': 0xF04C,
+                        'menu': 0xF0C9,
+                        'check': 0xF00C,
+                        'close': 0xF00D
 					};
 					
 	grunt.initConfig({

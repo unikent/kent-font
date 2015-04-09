@@ -54,11 +54,16 @@ font-style:normal;
 .kf-caret-left, 
 .kf-caret-right, 
 .kf-caret-up, 
+.kf-check, 
+.kf-close, 
 .kf-exclamation-circle, 
 .kf-external-link, 
 .kf-home, 
 .kf-info-circle, 
+.kf-menu, 
 .kf-minus, 
+.kf-pause, 
+.kf-play, 
 .kf-plus, 
 .kf-sort-asc, 
 .kf-sort-desc { 
@@ -295,6 +300,22 @@ transform: translate(0px, 0px);
 }
 
 
+.kf-check {
+&:before {
+     content:"\f00c";
+ }
+
+}
+
+
+.kf-close {
+&:before {
+     content:"\f00d";
+ }
+
+}
+
+
 .kf-exclamation-circle {
 &:before {
      content:"\f06a";
@@ -327,9 +348,33 @@ transform: translate(0px, 0px);
 }
 
 
+.kf-menu {
+&:before {
+     content:"\f0c9";
+ }
+
+}
+
+
 .kf-minus {
 &:before {
      content:"\f068";
+ }
+
+}
+
+
+.kf-pause {
+&:before {
+     content:"\f04c";
+ }
+
+}
+
+
+.kf-play {
+&:before {
+     content:"\f04b";
  }
 
 }
