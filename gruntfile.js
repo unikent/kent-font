@@ -29,6 +29,7 @@ module.exports = function(grunt) {
 						'exclamation-circle': 0xF06A,
 						'external-link': 0xF08E,
 						'twitter': 0xF099,
+						'facebook' : 0xF09A,
 						'plus': 0xF067,
 						'minus': 0xF068,
 						'home': 0xF015,
