@@ -25,6 +25,7 @@
 .kf-chevron-up,
 .kf-circle,
 .kf-email,
+.kf-facebook,
 .kf-kent-block,
 .kf-kent-horizontal,
 .kf-kent-ke,
@@ -58,6 +59,7 @@
 .kf-chevron-up:before,
 .kf-circle:before,
 .kf-email:before,
+.kf-facebook:before,
 .kf-kent-block:before,
 .kf-kent-horizontal:before,
 .kf-kent-ke:before,
@@ -95,6 +97,9 @@
 }
 .kf-email:before {
   content: "\f0e0";
+}
+.kf-facebook:before {
+  content: "\f09a";
 }
 .kf-kent-block:before {
   content: "\e002";
