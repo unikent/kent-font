@@ -31,6 +31,7 @@
 .kf-kent-ke,
 .kf-library-search,
 .kf-moodle,
+.kf-pin,
 .kf-sds,
 .kf-search,
 .kf-spinner,
@@ -65,6 +66,7 @@
 .kf-kent-ke:before,
 .kf-library-search:before,
 .kf-moodle:before,
+.kf-pin:before,
 .kf-sds:before,
 .kf-search:before,
 .kf-spinner:before,
@@ -115,6 +117,9 @@
 }
 .kf-moodle:before {
   content: "\e004";
+}
+.kf-pin:before {
+  content: "\f041";
 }
 .kf-sds:before {
   content: "\f080";
