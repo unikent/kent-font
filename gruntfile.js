@@ -53,7 +53,11 @@ module.exports = function(grunt) {
 						'heart' : 0xF004,
 						'heart-o' : 0xF08A,
 						'star' : 0xF005,
-						'star-o' : 0xF006
+						'star-o' : 0xF006,
+						'volume-mute' : 0xF026,
+						'volume-low' : 0xF027,
+						'volume-medium' : 0xE005,
+						'volume-high' : 0xF028
 					};
 					
 	grunt.initConfig({

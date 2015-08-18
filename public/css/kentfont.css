@@ -65,7 +65,11 @@
 .kf-sort-asc,
 .kf-sort-desc,
 .kf-star-o,
-.kf-star {
+.kf-star,
+.kf-volume-high,
+.kf-volume-low,
+.kf-volume-medium,
+.kf-volume-mute {
   display: inline-block;
   font-feature-settings: normal;
   font-kerning: auto;
@@ -128,7 +132,11 @@
 .kf-sort-asc:before,
 .kf-sort-desc:before,
 .kf-star-o:before,
-.kf-star:before {
+.kf-star:before,
+.kf-volume-high:before,
+.kf-volume-low:before,
+.kf-volume-medium:before,
+.kf-volume-mute:before {
   font-family: "kentfont";
   display: inline-block;
   font-weight: normal;
@@ -278,6 +286,18 @@
 }
 .kf-star:before {
   content: "\f005";
+}
+.kf-volume-high:before {
+  content: "\f028";
+}
+.kf-volume-low:before {
+  content: "\f027";
+}
+.kf-volume-medium:before {
+  content: "\e005";
+}
+.kf-volume-mute:before {
+  content: "\f026";
 }
 .kf-fw {
   width: 1.28571429em;

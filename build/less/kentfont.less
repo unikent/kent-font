@@ -63,7 +63,11 @@
 .kf-sort-asc, 
 .kf-sort-desc, 
 .kf-star-o, 
-.kf-star { 
+.kf-star, 
+.kf-volume-high, 
+.kf-volume-low, 
+.kf-volume-medium, 
+.kf-volume-mute { 
 display:inline-block;
 font-feature-settings: normal;
 font-kerning: auto;
@@ -468,6 +472,38 @@ transform: translate(0px, 0px);
 .kf-star {
 &:before {
      content:"\f005";
+ }
+
+}
+
+
+.kf-volume-high {
+&:before {
+     content:"\f028";
+ }
+
+}
+
+
+.kf-volume-low {
+&:before {
+     content:"\f027";
+ }
+
+}
+
+
+.kf-volume-medium {
+&:before {
+     content:"\e005";
+ }
+
+}
+
+
+.kf-volume-mute {
+&:before {
+     content:"\f026";
  }
 
 }
