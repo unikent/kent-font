@@ -38,7 +38,9 @@
 .kf-spinner,
 .kf-square,
 .kf-timetables,
-.kf-twitter {
+.kf-twitter,
+.kf-user,
+.kf-wheelchair {
   display: inline-block;
   font-feature-settings: normal;
   font-kerning: auto;
@@ -74,7 +76,9 @@
 .kf-spinner:before,
 .kf-square:before,
 .kf-timetables:before,
-.kf-twitter:before {
+.kf-twitter:before,
+.kf-user:before,
+.kf-wheelchair:before {
   font-family: "kentfont-lite";
   display: inline-block;
   font-weight: normal;
@@ -143,6 +147,12 @@
 }
 .kf-twitter:before {
   content: "\f099";
+}
+.kf-user:before {
+  content: "\f007";
+}
+.kf-wheelchair:before {
+  content: "\f193";
 }
 .kf-fw {
   width: 1.28571429em;

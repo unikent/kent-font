@@ -47,8 +47,13 @@ module.exports = function(grunt) {
                         'check': 0xF00C,
                         'close': 0xF00D,
                         'pin' : 0xF041,
-                        'location' : 0xF124
-
+                        'location' : 0xF124,
+						'user' : 0xF007,
+						'wheelchair' : 0xF193,
+						'heart' : 0xF004,
+						'heart-o' : 0xF08A,
+						'star' : 0xF005,
+						'star-o' : 0xF006
 					};
 					
 	grunt.initConfig({

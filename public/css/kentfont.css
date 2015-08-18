@@ -39,6 +39,8 @@
 .kf-square,
 .kf-timetables,
 .kf-twitter,
+.kf-user,
+.kf-wheelchair,
 .kf-angle-down,
 .kf-angle-left,
 .kf-angle-right,
@@ -51,6 +53,8 @@
 .kf-close,
 .kf-exclamation-circle,
 .kf-external-link,
+.kf-heart-o,
+.kf-heart,
 .kf-home,
 .kf-info-circle,
 .kf-menu,
@@ -59,7 +63,9 @@
 .kf-play,
 .kf-plus,
 .kf-sort-asc,
-.kf-sort-desc {
+.kf-sort-desc,
+.kf-star-o,
+.kf-star {
   display: inline-block;
   font-feature-settings: normal;
   font-kerning: auto;
@@ -96,6 +102,8 @@
 .kf-square:before,
 .kf-timetables:before,
 .kf-twitter:before,
+.kf-user:before,
+.kf-wheelchair:before,
 .kf-angle-down:before,
 .kf-angle-left:before,
 .kf-angle-right:before,
@@ -108,6 +116,8 @@
 .kf-close:before,
 .kf-exclamation-circle:before,
 .kf-external-link:before,
+.kf-heart-o:before,
+.kf-heart:before,
 .kf-home:before,
 .kf-info-circle:before,
 .kf-menu:before,
@@ -116,7 +126,9 @@
 .kf-play:before,
 .kf-plus:before,
 .kf-sort-asc:before,
-.kf-sort-desc:before {
+.kf-sort-desc:before,
+.kf-star-o:before,
+.kf-star:before {
   font-family: "kentfont";
   display: inline-block;
   font-weight: normal;
@@ -186,6 +198,12 @@
 .kf-twitter:before {
   content: "\f099";
 }
+.kf-user:before {
+  content: "\f007";
+}
+.kf-wheelchair:before {
+  content: "\f193";
+}
 .kf-angle-down:before {
   content: "\f107";
 }
@@ -222,6 +240,12 @@
 .kf-external-link:before {
   content: "\f08e";
 }
+.kf-heart-o:before {
+  content: "\f08a";
+}
+.kf-heart:before {
+  content: "\f004";
+}
 .kf-home:before {
   content: "\f015";
 }
@@ -248,6 +272,12 @@
 }
 .kf-sort-desc:before {
   content: "\f0dd";
+}
+.kf-star-o:before {
+  content: "\f006";
+}
+.kf-star:before {
+  content: "\f005";
 }
 .kf-fw {
   width: 1.28571429em;

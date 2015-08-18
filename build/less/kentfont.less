@@ -37,6 +37,8 @@
 .kf-square, 
 .kf-timetables, 
 .kf-twitter, 
+.kf-user, 
+.kf-wheelchair, 
 .kf-angle-down, 
 .kf-angle-left, 
 .kf-angle-right, 
@@ -49,6 +51,8 @@
 .kf-close, 
 .kf-exclamation-circle, 
 .kf-external-link, 
+.kf-heart-o, 
+.kf-heart, 
 .kf-home, 
 .kf-info-circle, 
 .kf-menu, 
@@ -57,7 +61,9 @@
 .kf-play, 
 .kf-plus, 
 .kf-sort-asc, 
-.kf-sort-desc { 
+.kf-sort-desc, 
+.kf-star-o, 
+.kf-star { 
 display:inline-block;
 font-feature-settings: normal;
 font-kerning: auto;
@@ -251,6 +257,22 @@ transform: translate(0px, 0px);
 }
 
 
+.kf-user {
+&:before {
+     content:"\f007";
+ }
+
+}
+
+
+.kf-wheelchair {
+&:before {
+     content:"\f193";
+ }
+
+}
+
+
 .kf-angle-down {
 &:before {
      content:"\f107";
@@ -347,6 +369,22 @@ transform: translate(0px, 0px);
 }
 
 
+.kf-heart-o {
+&:before {
+     content:"\f08a";
+ }
+
+}
+
+
+.kf-heart {
+&:before {
+     content:"\f004";
+ }
+
+}
+
+
 .kf-home {
 &:before {
      content:"\f015";
@@ -414,6 +452,22 @@ transform: translate(0px, 0px);
 .kf-sort-desc {
 &:before {
      content:"\f0dd";
+ }
+
+}
+
+
+.kf-star-o {
+&:before {
+     content:"\f006";
+ }
+
+}
+
+
+.kf-star {
+&:before {
+     content:"\f005";
  }
 
 }
