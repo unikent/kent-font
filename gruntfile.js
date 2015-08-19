@@ -57,7 +57,8 @@ module.exports = function(grunt) {
 						'volume-mute' : 0xF026,
 						'volume-low' : 0xF027,
 						'volume-medium' : 0xE005,
-						'volume-high' : 0xF028
+						'volume-high' : 0xF028,
+						'list' : 0xF03A
 					};
 					
 	grunt.initConfig({

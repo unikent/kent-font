@@ -57,6 +57,7 @@
 .kf-heart,
 .kf-home,
 .kf-info-circle,
+.kf-list,
 .kf-menu,
 .kf-minus,
 .kf-pause,
@@ -124,6 +125,7 @@
 .kf-heart:before,
 .kf-home:before,
 .kf-info-circle:before,
+.kf-list:before,
 .kf-menu:before,
 .kf-minus:before,
 .kf-pause:before,
@@ -259,6 +261,9 @@
 }
 .kf-info-circle:before {
   content: "\f05a";
+}
+.kf-list:before {
+  content: "\f03a";
 }
 .kf-menu:before {
   content: "\f0c9";
