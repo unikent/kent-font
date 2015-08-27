@@ -51,6 +51,7 @@
 .kf-caret-up,
 .kf-check,
 .kf-close,
+.kf-creative-commons,
 .kf-exclamation-circle,
 .kf-external-link,
 .kf-google-plus,
@@ -121,6 +122,7 @@
 .kf-caret-up:before,
 .kf-check:before,
 .kf-close:before,
+.kf-creative-commons:before,
 .kf-exclamation-circle:before,
 .kf-external-link:before,
 .kf-google-plus:before,
@@ -247,6 +249,9 @@
 }
 .kf-close:before {
   content: "\f00d";
+}
+.kf-creative-commons:before {
+  content: "\f25e";
 }
 .kf-exclamation-circle:before {
   content: "\f06a";

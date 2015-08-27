@@ -32,6 +32,7 @@ module.exports = function(grunt) {
 						'facebook' : 0xF09A,
 						'linkedin' : 0xF0E1,
 						'google-plus' : 0xF0D5,
+						'creative-commons': 0xF25E,
 						'plus': 0xF067,
 						'minus': 0xF068,
 						'home': 0xF015,
