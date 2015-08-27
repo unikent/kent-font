@@ -53,10 +53,12 @@
 .kf-close,
 .kf-exclamation-circle,
 .kf-external-link,
+.kf-google-plus,
 .kf-heart-o,
 .kf-heart,
 .kf-home,
 .kf-info-circle,
+.kf-linkedin,
 .kf-list,
 .kf-menu,
 .kf-minus,
@@ -121,10 +123,12 @@
 .kf-close:before,
 .kf-exclamation-circle:before,
 .kf-external-link:before,
+.kf-google-plus:before,
 .kf-heart-o:before,
 .kf-heart:before,
 .kf-home:before,
 .kf-info-circle:before,
+.kf-linkedin:before,
 .kf-list:before,
 .kf-menu:before,
 .kf-minus:before,
@@ -250,6 +254,9 @@
 .kf-external-link:before {
   content: "\f08e";
 }
+.kf-google-plus:before {
+  content: "\f0d5";
+}
 .kf-heart-o:before {
   content: "\f08a";
 }
@@ -261,6 +268,9 @@
 }
 .kf-info-circle:before {
   content: "\f05a";
+}
+.kf-linkedin:before {
+  content: "\f0e1";
 }
 .kf-list:before {
   content: "\f03a";
