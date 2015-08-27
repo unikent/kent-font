@@ -38,6 +38,7 @@ module.exports = function(grunt) {
 						'home': 0xF015,
 						'square': 0xF04D,
 						'circle': 0xF111,
+						'camera': 0xF030,
 						'caret-left': 0xF0D9,
 						'caret-right': 0xF0DA,
 						'caret-up':	0xF0D8,
