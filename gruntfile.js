@@ -62,7 +62,9 @@ module.exports = function(grunt) {
 						'volume-low' : 0xF027,
 						'volume-medium' : 0xE005,
 						'volume-high' : 0xF028,
-						'list' : 0xF03A
+						'list' : 0xF03A,
+						'step-forward' : 0xF051,
+						'step-backward' : 0xF048
 					};
 					
 	grunt.initConfig({

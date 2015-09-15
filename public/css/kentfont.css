@@ -71,6 +71,8 @@
 .kf-sort-desc,
 .kf-star-o,
 .kf-star,
+.kf-step-backward,
+.kf-step-forward,
 .kf-volume-high,
 .kf-volume-low,
 .kf-volume-medium,
@@ -143,6 +145,8 @@
 .kf-sort-desc:before,
 .kf-star-o:before,
 .kf-star:before,
+.kf-step-backward:before,
+.kf-step-forward:before,
 .kf-volume-high:before,
 .kf-volume-low:before,
 .kf-volume-medium:before,
@@ -311,6 +315,12 @@
 }
 .kf-star:before {
   content: "\f005";
+}
+.kf-step-backward:before {
+  content: "\f048";
+}
+.kf-step-forward:before {
+  content: "\f051";
 }
 .kf-volume-high:before {
   content: "\f028";
