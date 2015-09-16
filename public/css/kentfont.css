@@ -24,6 +24,7 @@
 .kf-chevron-right,
 .kf-chevron-up,
 .kf-circle,
+.kf-creative-commons,
 .kf-email,
 .kf-facebook,
 .kf-kent-block,
@@ -39,10 +40,13 @@
 .kf-square,
 .kf-timetables,
 .kf-twitter,
+.kf-user,
+.kf-wheelchair,
 .kf-angle-down,
 .kf-angle-left,
 .kf-angle-right,
 .kf-angle-up,
+.kf-camera,
 .kf-caret-down,
 .kf-caret-left,
 .kf-caret-right,
@@ -52,8 +56,13 @@
 .kf-exclamation-circle,
 .kf-external-link,
 .kf-frown,
+.kf-google-plus,
+.kf-heart-o,
+.kf-heart,
 .kf-home,
 .kf-info-circle,
+.kf-linkedin,
+.kf-list,
 .kf-meh,
 .kf-menu,
 .kf-minus,
@@ -62,7 +71,15 @@
 .kf-plus,
 .kf-smile,
 .kf-sort-asc,
-.kf-sort-desc {
+.kf-sort-desc,
+.kf-star-o,
+.kf-star,
+.kf-step-backward,
+.kf-step-forward,
+.kf-volume-high,
+.kf-volume-low,
+.kf-volume-medium,
+.kf-volume-mute {
   display: inline-block;
   font-feature-settings: normal;
   font-kerning: auto;
@@ -84,6 +101,7 @@
 .kf-chevron-right:before,
 .kf-chevron-up:before,
 .kf-circle:before,
+.kf-creative-commons:before,
 .kf-email:before,
 .kf-facebook:before,
 .kf-kent-block:before,
@@ -99,10 +117,13 @@
 .kf-square:before,
 .kf-timetables:before,
 .kf-twitter:before,
+.kf-user:before,
+.kf-wheelchair:before,
 .kf-angle-down:before,
 .kf-angle-left:before,
 .kf-angle-right:before,
 .kf-angle-up:before,
+.kf-camera:before,
 .kf-caret-down:before,
 .kf-caret-left:before,
 .kf-caret-right:before,
@@ -112,8 +133,13 @@
 .kf-exclamation-circle:before,
 .kf-external-link:before,
 .kf-frown:before,
+.kf-google-plus:before,
+.kf-heart-o:before,
+.kf-heart:before,
 .kf-home:before,
 .kf-info-circle:before,
+.kf-linkedin:before,
+.kf-list:before,
 .kf-meh:before,
 .kf-menu:before,
 .kf-minus:before,
@@ -122,7 +148,15 @@
 .kf-plus:before,
 .kf-smile:before,
 .kf-sort-asc:before,
-.kf-sort-desc:before {
+.kf-sort-desc:before,
+.kf-star-o:before,
+.kf-star:before,
+.kf-step-backward:before,
+.kf-step-forward:before,
+.kf-volume-high:before,
+.kf-volume-low:before,
+.kf-volume-medium:before,
+.kf-volume-mute:before {
   font-family: "kentfont";
   display: inline-block;
   font-weight: normal;
@@ -146,6 +180,9 @@
 }
 .kf-circle:before {
   content: "\f111";
+}
+.kf-creative-commons:before {
+  content: "\f25e";
 }
 .kf-email:before {
   content: "\f0e0";
@@ -192,6 +229,12 @@
 .kf-twitter:before {
   content: "\f099";
 }
+.kf-user:before {
+  content: "\f007";
+}
+.kf-wheelchair:before {
+  content: "\f193";
+}
 .kf-angle-down:before {
   content: "\f107";
 }
@@ -203,6 +246,9 @@
 }
 .kf-angle-up:before {
   content: "\f106";
+}
+.kf-camera:before {
+  content: "\f030";
 }
 .kf-caret-down:before {
   content: "\f0d7";
@@ -231,11 +277,26 @@
 .kf-frown:before {
   content: "\f119";
 }
+.kf-google-plus:before {
+  content: "\f0d5";
+}
+.kf-heart-o:before {
+  content: "\f08a";
+}
+.kf-heart:before {
+  content: "\f004";
+}
 .kf-home:before {
   content: "\f015";
 }
 .kf-info-circle:before {
   content: "\f05a";
+}
+.kf-linkedin:before {
+  content: "\f0e1";
+}
+.kf-list:before {
+  content: "\f03a";
 }
 .kf-meh:before {
   content: "\f11a";
@@ -263,6 +324,30 @@
 }
 .kf-sort-desc:before {
   content: "\f0dd";
+}
+.kf-star-o:before {
+  content: "\f006";
+}
+.kf-star:before {
+  content: "\f005";
+}
+.kf-step-backward:before {
+  content: "\f048";
+}
+.kf-step-forward:before {
+  content: "\f051";
+}
+.kf-volume-high:before {
+  content: "\f028";
+}
+.kf-volume-low:before {
+  content: "\f027";
+}
+.kf-volume-medium:before {
+  content: "\e005";
+}
+.kf-volume-mute:before {
+  content: "\f026";
 }
 .kf-fw {
   width: 1.28571429em;
