@@ -51,13 +51,16 @@
 .kf-close,
 .kf-exclamation-circle,
 .kf-external-link,
+.kf-frown,
 .kf-home,
 .kf-info-circle,
+.kf-meh,
 .kf-menu,
 .kf-minus,
 .kf-pause,
 .kf-play,
 .kf-plus,
+.kf-smile,
 .kf-sort-asc,
 .kf-sort-desc {
   display: inline-block;
@@ -108,13 +111,16 @@
 .kf-close:before,
 .kf-exclamation-circle:before,
 .kf-external-link:before,
+.kf-frown:before,
 .kf-home:before,
 .kf-info-circle:before,
+.kf-meh:before,
 .kf-menu:before,
 .kf-minus:before,
 .kf-pause:before,
 .kf-play:before,
 .kf-plus:before,
+.kf-smile:before,
 .kf-sort-asc:before,
 .kf-sort-desc:before {
   font-family: "kentfont";
@@ -222,11 +228,17 @@
 .kf-external-link:before {
   content: "\f08e";
 }
+.kf-frown:before {
+  content: "\f119";
+}
 .kf-home:before {
   content: "\f015";
 }
 .kf-info-circle:before {
   content: "\f05a";
+}
+.kf-meh:before {
+  content: "\f11a";
 }
 .kf-menu:before {
   content: "\f0c9";
@@ -242,6 +254,9 @@
 }
 .kf-plus:before {
   content: "\f067";
+}
+.kf-smile:before {
+  content: "\f118";
 }
 .kf-sort-asc:before {
   content: "\f0de";
