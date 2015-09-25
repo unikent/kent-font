@@ -30,6 +30,7 @@
 .kf-kent-block,
 .kf-kent-horizontal,
 .kf-kent-ke,
+.kf-kent-vision,
 .kf-library-search,
 .kf-location,
 .kf-moodle,
@@ -107,6 +108,7 @@
 .kf-kent-block:before,
 .kf-kent-horizontal:before,
 .kf-kent-ke:before,
+.kf-kent-vision:before,
 .kf-library-search:before,
 .kf-location:before,
 .kf-moodle:before,
@@ -198,6 +200,9 @@
 }
 .kf-kent-ke:before {
   content: "\e003";
+}
+.kf-kent-vision:before {
+  content: "\e006";
 }
 .kf-library-search:before {
   content: "\f0ac";

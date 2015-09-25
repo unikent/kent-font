@@ -9,6 +9,7 @@ module.exports = function(grunt) {
 						'kent-horizontal': 0xE001,
 						'kent-block': 0xE002,
 						'kent-ke': 0xE003,
+						'kent-vision' : 0xE006,
 						'book': 0xF02D,
 						'email': 0xF0E0,
 						'library-search': 0xF0AC,
