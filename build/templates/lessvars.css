@@ -1,0 +1,3 @@
+<% if (iconsStyles) { %>/* Icons */<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+@<%= classPrefix %><%= glyphs[glyphIdx] %> : "<% if (addLigatures) { %><%= glyphs[glyphIdx] %><% } else { %>\<%= codepoints[glyphIdx] %><% } %>";
+<% } } %>

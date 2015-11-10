@@ -1,266 +1,137 @@
 
-// Bootstrap Overrides
+.kf,
+[class^="kf-"],
+[class*=" kf-"] {
+    display: inline-block;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: inherit;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+    transform: translate(0px, 0px);
+}
+
+.kf:before,
 [class^="kf-"]:before,
 [class*=" kf-"]:before {
+    font-family:"kentfont-lite";
     display:inline-block;
-    vertical-align:middle;
-    line-height:1;
     font-weight:normal;
     font-style:normal;
     text-decoration:inherit;
+    vertical-align:middle;
+    line-height:1;
     text-transform:none;
     text-rendering:optimizeLegibility;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
 }
 
-// Mixins
-
-.kf-book, 
-.kf-chevron-down, 
-.kf-chevron-left, 
-.kf-chevron-right, 
-.kf-chevron-up, 
-.kf-circle, 
-.kf-creative-commons, 
-.kf-email, 
-.kf-facebook, 
-.kf-kent-block, 
-.kf-kent-horizontal, 
-.kf-kent-ke, 
-.kf-kent-vision, 
-.kf-library-search, 
-.kf-location, 
-.kf-moodle, 
-.kf-pin, 
-.kf-sds, 
-.kf-search, 
-.kf-spinner, 
-.kf-square, 
-.kf-timetables, 
-.kf-twitter, 
-.kf-user, 
-.kf-wheelchair { 
-display:inline-block;
-font-feature-settings: normal;
-font-kerning: auto;
-font-language-override: normal;
-font-size: inherit;
-font-size-adjust: none;
-font-stretch: normal;
-font-style: normal;
-font-synthesis: weight style;
-font-variant: normal;
-font-weight: normal;
-line-height: 1;
-text-rendering: auto;
-transform: translate(0px, 0px);
-&:before {
-     font-family:"kentfont-lite";
-     display:inline-block;
-     font-weight:normal;
-     font-style:normal;
-     text-decoration:inherit;
- }
-}
-
 // Icons
 
 .kf-book {
-&:before {
-     content:"\f02d";
- }
-
+    &:before { content:"\f02d"; }
 }
-
 
 .kf-chevron-down {
-&:before {
-     content:"\f078";
- }
-
+    &:before { content:"\f078"; }
 }
-
 
 .kf-chevron-left {
-&:before {
-     content:"\f053";
- }
-
+    &:before { content:"\f053"; }
 }
-
 
 .kf-chevron-right {
-&:before {
-     content:"\f054";
- }
-
+    &:before { content:"\f054"; }
 }
-
 
 .kf-chevron-up {
-&:before {
-     content:"\f077";
- }
-
+    &:before { content:"\f077"; }
 }
-
 
 .kf-circle {
-&:before {
-     content:"\f111";
- }
-
+    &:before { content:"\f111"; }
 }
-
 
 .kf-creative-commons {
-&:before {
-     content:"\f25e";
- }
-
+    &:before { content:"\f25e"; }
 }
-
 
 .kf-email {
-&:before {
-     content:"\f0e0";
- }
-
+    &:before { content:"\f0e0"; }
 }
-
 
 .kf-facebook {
-&:before {
-     content:"\f09a";
- }
-
+    &:before { content:"\f09a"; }
 }
-
 
 .kf-kent-block {
-&:before {
-     content:"\e002";
- }
-
+    &:before { content:"\e002"; }
 }
-
 
 .kf-kent-horizontal {
-&:before {
-     content:"\e001";
- }
-
+    &:before { content:"\e001"; }
 }
-
 
 .kf-kent-ke {
-&:before {
-     content:"\e003";
- }
-
+    &:before { content:"\e003"; }
 }
-
 
 .kf-kent-vision {
-&:before {
-     content:"\e006";
- }
-
+    &:before { content:"\e006"; }
 }
-
 
 .kf-library-search {
-&:before {
-     content:"\f0ac";
- }
-
+    &:before { content:"\f0ac"; }
 }
-
 
 .kf-location {
-&:before {
-     content:"\f124";
- }
-
+    &:before { content:"\f124"; }
 }
-
 
 .kf-moodle {
-&:before {
-     content:"\e004";
- }
-
+    &:before { content:"\e004"; }
 }
-
 
 .kf-pin {
-&:before {
-     content:"\f041";
- }
-
+    &:before { content:"\f041"; }
 }
-
 
 .kf-sds {
-&:before {
-     content:"\f080";
- }
-
+    &:before { content:"\f080"; }
 }
-
 
 .kf-search {
-&:before {
-     content:"\f002";
- }
-
+    &:before { content:"\f002"; }
 }
-
 
 .kf-spinner {
-&:before {
-     content:"\f1ce";
- }
-
+    &:before { content:"\f1ce"; }
 }
-
 
 .kf-square {
-&:before {
-     content:"\f04d";
- }
-
+    &:before { content:"\f04d"; }
 }
-
 
 .kf-timetables {
-&:before {
-     content:"\f073";
- }
-
+    &:before { content:"\e007"; }
 }
-
 
 .kf-twitter {
-&:before {
-     content:"\f099";
- }
-
+    &:before { content:"\f099"; }
 }
-
 
 .kf-user {
-&:before {
-     content:"\f007";
- }
-
+    &:before { content:"\f007"; }
 }
 
-
 .kf-wheelchair {
-&:before {
-     content:"\f193";
- }
-
+    &:before { content:"\f193"; }
 }

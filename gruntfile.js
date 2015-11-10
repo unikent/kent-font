@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 						'library-search': 0xF0AC,
 						'moodle': 0xE004,
 						'sds': 0xF080,
-						'timetables': 0xF073,
+						'timetables': 0xE007,
 						'search': 0xF002,
 						'spinner': 0xF1CE,
 						'chevron-left': 0xF053,
@@ -28,10 +28,17 @@ module.exports = function(grunt) {
 						'angle-down': 0xF107,
 						'info-circle': 0xF05A,
 						'exclamation-circle': 0xF06A,
+						'question-circle' : 0xF059,
 						'external-link': 0xF08E,
 						'twitter': 0xF099,
 						'facebook' : 0xF09A,
 						'linkedin' : 0xF0E1,
+						'flickr' : 0xF16E,
+						'youtube' : 0xF167,
+						'rss' :	0xF09E,
+						'tumblr' : 0xF173,
+						'instagram' : 0xF16D,
+						'pinterest' : 0xF0D2,
 						'google-plus' : 0xF0D5,
 						'creative-commons': 0xF25E,
 						'plus': 0xF067,
@@ -46,6 +53,7 @@ module.exports = function(grunt) {
 						'caret-down': 0xF0D7,
 						'sort-asc': 0xF0DE,
 						'sort-desc': 0xF0DD,
+						'sort' : 0xF0DC,
                         'play': 0xF04B,
                         'pause': 0xF04C,
                         'menu': 0xF0C9,
@@ -68,13 +76,67 @@ module.exports = function(grunt) {
 						'volume-high' : 0xF028,
 						'list' : 0xF03A,
 						'step-forward' : 0xF051,
-						'step-backward' : 0xF048
+						'step-backward' : 0xF048,
+						'email-o' : 0xF003,
+						'ban': 0xF05E,
+						'calendar' : 0xF073,
+						'check-circle': 0xF05D,
+						'close-cirlce' : 0xF05C,
+						'clock' : 0xF017,
+						'cog' :	0xF013,
+						'comment' : 0xF075,
+						'phone' : 0xF095,
+						'trophy' : 0xF091
 					};
 					
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
 		webfont: {
+			'less':{
+				src: 'build/svg/*/*.svg',
+				dest: 'public/fonts',
+				destCss: 'build/less',
+				options: {
+					engine:'node',
+					font: '_kentfont',
+					hashes: false,
+					types: 'eot,woff,ttf,svg',
+					template: 'build/templates/lessvars.css',
+					htmlDemoTemplate: 'build/templates/demo.html',
+					destHtml: 'public/',
+					templateOptions: {
+						baseClass: 'kf',
+						classPrefix: 'kf-',
+						mixinPrefix: 'kf_'
+					},
+					stylesheet:'less',
+					relativeFontPath:'../fonts',
+					codepoints: kent_codepoints
+				}
+			},
+			'sass':{
+				src: 'build/svg/*/*.svg',
+				dest: 'public/fonts',
+				destCss: 'build/less',
+				options: {
+					engine:'node',
+					font: 'kentfont',
+					hashes: false,
+					types: 'eot,woff,ttf,svg',
+					template: 'build/templates/sassvars.css',
+					htmlDemoTemplate: 'build/templates/demo.html',
+					destHtml: 'public/',
+					templateOptions: {
+						baseClass: 'kf',
+						classPrefix: 'kf-',
+						mixinPrefix: 'kf_'
+					},
+					stylesheet:'scss',
+					relativeFontPath:'../fonts',
+					codepoints: kent_codepoints
+				}
+			},
 			build: {
 				src: 'build/svg/*/*.svg',
 				dest: 'public/fonts',
@@ -144,6 +206,5 @@ module.exports = function(grunt) {
 	// Default task(s).
 	grunt.registerTask('default', ['webfont','less','imageEmbed']);
 	grunt.registerTask('lite', ['webfont:lite', 'less:lite','imageEmbed']);
-	grunt.registerTask('build', ['webfont:build', 'less:build']);
 };
 

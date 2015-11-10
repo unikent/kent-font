@@ -5,44 +5,9 @@
   font-weight: normal;
   font-style: normal;
 }
-[class^="kf-"]:before,
-[class*=" kf-"]:before {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.kf-book,
-.kf-chevron-down,
-.kf-chevron-left,
-.kf-chevron-right,
-.kf-chevron-up,
-.kf-circle,
-.kf-creative-commons,
-.kf-email,
-.kf-facebook,
-.kf-kent-block,
-.kf-kent-horizontal,
-.kf-kent-ke,
-.kf-kent-vision,
-.kf-library-search,
-.kf-location,
-.kf-moodle,
-.kf-pin,
-.kf-sds,
-.kf-search,
-.kf-spinner,
-.kf-square,
-.kf-timetables,
-.kf-twitter,
-.kf-user,
-.kf-wheelchair {
+.kf,
+[class^="kf-"],
+[class*=" kf-"] {
   display: inline-block;
   font-feature-settings: normal;
   font-kerning: auto;
@@ -58,36 +23,20 @@
   text-rendering: auto;
   transform: translate(0px, 0px);
 }
-.kf-book:before,
-.kf-chevron-down:before,
-.kf-chevron-left:before,
-.kf-chevron-right:before,
-.kf-chevron-up:before,
-.kf-circle:before,
-.kf-creative-commons:before,
-.kf-email:before,
-.kf-facebook:before,
-.kf-kent-block:before,
-.kf-kent-horizontal:before,
-.kf-kent-ke:before,
-.kf-kent-vision:before,
-.kf-library-search:before,
-.kf-location:before,
-.kf-moodle:before,
-.kf-pin:before,
-.kf-sds:before,
-.kf-search:before,
-.kf-spinner:before,
-.kf-square:before,
-.kf-timetables:before,
-.kf-twitter:before,
-.kf-user:before,
-.kf-wheelchair:before {
+.kf:before,
+[class^="kf-"]:before,
+[class*=" kf-"]:before {
   font-family: "kentfont-lite";
   display: inline-block;
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
+  vertical-align: middle;
+  line-height: 1;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .kf-book:before {
   content: "\f02d";
@@ -153,7 +102,7 @@
   content: "\f04d";
 }
 .kf-timetables:before {
-  content: "\f073";
+  content: "\e007";
 }
 .kf-twitter:before {
   content: "\f099";
