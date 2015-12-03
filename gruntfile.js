@@ -56,6 +56,7 @@ module.exports = function(grunt) {
 						'sort' : 0xF0DC,
                         'play': 0xF04B,
                         'pause': 0xF04C,
+						'play-circle': 0xF144,
                         'menu': 0xF0C9,
                         'check': 0xF00C,
                         'close': 0xF00D,
