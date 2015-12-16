@@ -1,3 +1,10 @@
 <% if (iconsStyles) { %>/* Icons */<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
 $<%= classPrefix %><%= glyphs[glyphIdx] %> : "<% if (addLigatures) { %><%= glyphs[glyphIdx] %><% } else { %>\<%= codepoints[glyphIdx] %><% } %>";
-<% } } %>
+<% }  %>
+
+$<%= classPrefix %>characters : (
+<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+<%= glyphs[glyphIdx] %> : "<% if (addLigatures) { %><%= glyphs[glyphIdx] %><% } else { %>\<%= codepoints[glyphIdx] %><% } %>",
+<% } %>
+);
+<% } %>
