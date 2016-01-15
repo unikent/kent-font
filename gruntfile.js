@@ -22,6 +22,8 @@ module.exports = function(grunt) {
 						'chevron-right': 0xF054,
 						'chevron-up':	0xF077,
 						'chevron-down': 0xF078,
+						'chevron-left-square': 0xE008,
+						'chevron-right-square': 0xE009,
 						'angle-left': 0xF104,
 						'angle-right': 0xF105,
 						'angle-up': 0xF106,
