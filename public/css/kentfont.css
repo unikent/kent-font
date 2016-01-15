@@ -152,11 +152,17 @@
 .kf-check:before {
   content: "\f00c";
 }
+.kf-chevron-down-square:before {
+  content: "\e00b";
+}
 .kf-chevron-left-square:before {
   content: "\e008";
 }
 .kf-chevron-right-square:before {
   content: "\e009";
+}
+.kf-chevron-up-square:before {
+  content: "\e00a";
 }
 .kf-clock:before {
   content: "\f017";
