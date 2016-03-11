@@ -77,6 +77,9 @@
 .kf-kent-vision:before {
   content: "\e006";
 }
+.kf-krimson:before {
+  content: "\e00c";
+}
 .kf-library-search:before {
   content: "\f0ac";
 }
@@ -280,6 +283,9 @@
 }
 .kf-tumblr:before {
   content: "\f173";
+}
+.kf-users:before {
+  content: "\f0c0";
 }
 .kf-volume-high:before {
   content: "\f028";

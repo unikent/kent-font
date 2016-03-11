@@ -70,6 +70,7 @@ module.exports = function(grunt) {
                         'frown' : 0xF119,
                         'meh': 0xF11a,
 						'user' : 0xF007,
+						'users': 0xF0C0,
 						'wheelchair' : 0xF193,
 						'heart' : 0xF004,
 						'heart-o' : 0xF08A,
@@ -91,7 +92,8 @@ module.exports = function(grunt) {
 						'cog' :	0xF013,
 						'comment' : 0xF075,
 						'phone' : 0xF095,
-						'trophy' : 0xF091
+						'trophy' : 0xF091,
+						'krimson' : 0xE00C
 					};
 					
 	grunt.initConfig({
