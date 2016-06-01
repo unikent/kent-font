@@ -209,6 +209,9 @@
 .kf-external-link:before {
   content: "\f08e";
 }
+.kf-file-text:before {
+  content: "\f0f6";
+}
 .kf-flickr:before {
   content: "\f16e";
 }
