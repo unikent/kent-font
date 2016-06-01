@@ -60,6 +60,11 @@ module.exports = function(grunt) {
 						'sort' : 0xF0DC,
                         'play': 0xF04B,
                         'pause': 0xF04C,
+                        'foward': 0xF04E,
+                        'backward': 0xF04A, 
+                        'compress': 0xF066, 
+                        'expand': 0xF065,
+                        'undo': 0xF0E2, 
 						'play-circle': 0xF144,
                         'menu': 0xF0C9,
                         'check': 0xF00C,
@@ -93,7 +98,11 @@ module.exports = function(grunt) {
 						'comment' : 0xF075,
 						'phone' : 0xF095,
 						'trophy' : 0xF091,
-						'krimson' : 0xE00C
+						'krimson' : 0xE00C,
+						'captions': 0xE00D,
+                        'captions-off': 0xE00E,
+                        'mendeley': 0xE00F,
+                        'academia': 0xE010,
 					};
 					
 	grunt.initConfig({
