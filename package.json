@@ -1,6 +1,6 @@
 {
   "name": "kent-font",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Icon webfont for use in kent sites and applications.",
   "main": "n/a",
   "dependencies": {

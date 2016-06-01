@@ -102,7 +102,7 @@ module.exports = function(grunt) {
 						'captions': 0xE00D,
                         'captions-off': 0xE00E,
                         'mendeley': 0xE00F,
-                        'academia': 0xE010,
+                        'academia-edu': 0xE010,
 					};
 					
 	grunt.initConfig({
