@@ -1,9 +1,8 @@
 # Kent-Font
-
 Icon webfont for use in kent sites and applications
 
-
 ## Usage
+Please refer to the current [brand guidelines](https://www.kent.ac.uk/brand) for use of the existing brand.
 
 To include in your site or project you can download from [github](https://github.com/unikent/kent-font/archive/master.zip) or install via bower or composer.
 
