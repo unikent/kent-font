@@ -245,6 +245,9 @@
 .kf-list:before {
   content: "\f03a";
 }
+.kf-lock:before {
+  content: "\f023";
+}
 .kf-meh:before {
   content: "\f11a";
 }
@@ -394,6 +397,9 @@
 }
 .kf-inverse {
   color: #fff;
+}
+.kf-lock-logo {
+  bottom: -9px;
 }
 .kf-spin {
   -webkit-animation: kf-spin 2s infinite linear;

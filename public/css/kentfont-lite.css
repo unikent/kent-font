@@ -179,6 +179,9 @@
 .kf-inverse {
   color: #fff;
 }
+.kf-lock-logo {
+  bottom: -9px;
+}
 .kf-spin {
   -webkit-animation: kf-spin 2s infinite linear;
   animation: kf-spin 2s infinite linear;
