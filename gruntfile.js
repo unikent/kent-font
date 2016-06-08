@@ -13,6 +13,7 @@ module.exports = function(grunt) {
 						'book': 0xF02D,
 						'email': 0xF0E0,
 						'library-search': 0xF0AC,
+						'lock': 0xF023,
 						'moodle': 0xE004,
 						'sds': 0xF080,
 						'timetables': 0xE007,
