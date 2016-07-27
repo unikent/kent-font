@@ -296,6 +296,9 @@
 .kf-sort:before {
   content: "\f0dc";
 }
+.kf-soundcloud:before {
+  content: "\f1be";
+}
 .kf-star-o:before {
   content: "\f006";
 }

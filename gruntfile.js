@@ -105,7 +105,8 @@ module.exports = function(grunt) {
                         'mendeley': 0xE00F,
                         'academia-edu': 0xE010,
                         'file-text': 0xF0F6,
-                        'weibo': 0xF18A
+                        'weibo': 0xF18A,
+                        'soundcloud': 0xF1BE
 					};
 					
 	grunt.initConfig({
