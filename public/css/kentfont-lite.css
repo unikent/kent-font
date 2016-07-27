@@ -86,6 +86,9 @@
 .kf-location:before {
   content: "\f124";
 }
+.kf-lock:before {
+  content: "\f023";
+}
 .kf-moodle:before {
   content: "\e004";
 }

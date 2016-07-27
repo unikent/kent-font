@@ -86,6 +86,9 @@
 .kf-location:before {
   content: "\f124";
 }
+.kf-lock:before {
+  content: "\f023";
+}
 .kf-moodle:before {
   content: "\e004";
 }
@@ -245,9 +248,6 @@
 .kf-list:before {
   content: "\f03a";
 }
-.kf-lock:before {
-  content: "\f023";
-}
 .kf-meh:before {
   content: "\f11a";
 }
@@ -331,6 +331,9 @@
 }
 .kf-volume-mute:before {
   content: "\f026";
+}
+.kf-weibo:before {
+  content: "\f18a";
 }
 .kf-youtube:before {
   content: "\f167";
