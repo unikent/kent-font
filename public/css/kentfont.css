@@ -338,6 +338,9 @@
 .kf-weibo:before {
   content: "\f18a";
 }
+.kf-wifi:before {
+  content: "\f103";
+}
 .kf-youtube:before {
   content: "\f167";
 }
