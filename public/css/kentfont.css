@@ -200,6 +200,9 @@
 .kf-compress:before {
   content: "\f066";
 }
+.kf-download:before {
+  content: "\f019";
+}
 .kf-email-o:before {
   content: "\f003";
 }
@@ -319,6 +322,9 @@
 }
 .kf-undo:before {
   content: "\f0e2";
+}
+.kf-university:before {
+  content: "\f19c";
 }
 .kf-users:before {
   content: "\f0c0";

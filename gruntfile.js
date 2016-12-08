@@ -106,7 +106,9 @@ module.exports = function(grunt) {
                         'academia-edu': 0xE010,
                         'file-text': 0xF0F6,
                         'weibo': 0xF18A,
-                        'soundcloud': 0xF1BE
+                        'soundcloud': 0xF1BE,
+                        'download': 0xF019,
+                        'university': 0xF19C
 					};
 					
 	grunt.initConfig({
